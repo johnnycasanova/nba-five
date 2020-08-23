@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Card = () => {
+const Card = ({id, name}) => {
     return(
-        <div>
-            <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628366.png"/>
+        <div className=" tc bg-gray dib br3 ma2 grow bw2 shadow-5">
+            <img alt="nba player" src={`https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/${id}.png`}/>
             <div>
-                <h2>Lonzo Ball</h2>
-                <p>jane.doe@gmail.com</p>
+                <h2>{name}</h2>
             </div>
         </div>
     );
